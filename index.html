@@ -9,6 +9,8 @@
   <meta name="author" content="MNP Web Solution" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://mnpwebsolution.com/" />
+  <link rel="icon" type="image/png" href="./logo.png" />
+  <link rel="apple-touch-icon" href="./logo.png" />
 
   <!-- Open Graph / Facebook Ads -->
   <meta property="og:type" content="website" />
@@ -90,13 +92,13 @@
           },
           colors: {
             brand: {
-              50: '#eef2ff',
-              100: '#e0e7ff',
-              500: '#6366f1',
-              600: '#4f46e5',
-              700: '#4338ca',
-              800: '#3730a3',
-              900: '#312e81',
+              50: '#fff7ed',
+              100: '#ffedd5',
+              500: '#f97316',
+              600: '#ea580c',
+              700: '#c2410c',
+              800: '#9a3412',
+              900: '#7c2d12',
             }
           },
           animation: {
@@ -123,7 +125,7 @@
 
   <style>
     :root {
-      --particle-color: rgba(99, 102, 241, 0.6);
+      --particle-color: rgba(249, 115, 22, 0.6);
     }
     * { box-sizing: border-box; }
     html { font-family: 'Inter', sans-serif; }
@@ -152,24 +154,24 @@
       border: 1px solid rgba(255,255,255,0.5);
     }
     .dark .glass-light {
-      background: rgba(30,27,75,0.6);
-      border: 1px solid rgba(99,102,241,0.2);
+      background: rgba(20,10,0,0.7);
+      border: 1px solid rgba(249,115,22,0.2);
     }
 
     /* Gradient text */
     .gradient-text {
-      background: linear-gradient(135deg, #a78bfa, #6366f1, #3b82f6);
+      background: linear-gradient(135deg, #fb923c, #f97316, #ea580c);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
     }
 
     /* Glow effect */
-    .glow-indigo {
-      box-shadow: 0 0 30px rgba(99,102,241,0.3), 0 0 60px rgba(99,102,241,0.1);
+    .glow-orange {
+      box-shadow: 0 0 30px rgba(249,115,22,0.4), 0 0 60px rgba(249,115,22,0.15);
     }
     .hover-glow:hover {
-      box-shadow: 0 0 25px rgba(99,102,241,0.4), 0 8px 32px rgba(99,102,241,0.2);
+      box-shadow: 0 0 25px rgba(249,115,22,0.4), 0 8px 32px rgba(249,115,22,0.2);
       transform: translateY(-4px);
       transition: all 0.3s ease;
     }
@@ -191,10 +193,10 @@
 
     /* Hero gradient bg */
     .hero-bg {
-      background: linear-gradient(135deg, #0f0c29 0%, #1a1040 30%, #302b63 60%, #24243e 100%);
+      background: linear-gradient(135deg, #0a0a0a 0%, #1a0800 35%, #2d1000 65%, #0f0600 100%);
     }
     .dark .hero-bg {
-      background: linear-gradient(135deg, #0f0c29 0%, #1a1040 30%, #302b63 60%, #24243e 100%);
+      background: linear-gradient(135deg, #0a0a0a 0%, #1a0800 35%, #2d1000 65%, #0f0600 100%);
     }
 
     /* Nav blur */
@@ -205,8 +207,8 @@
 
     /* Scrollbar */
     ::-webkit-scrollbar { width: 6px; }
-    ::-webkit-scrollbar-track { background: #1e1b4b; }
-    ::-webkit-scrollbar-thumb { background: #6366f1; border-radius: 3px; }
+    ::-webkit-scrollbar-track { background: #1a0800; }
+    ::-webkit-scrollbar-thumb { background: #f97316; border-radius: 3px; }
 
     /* Star rating */
     .stars { color: #fbbf24; }
@@ -217,9 +219,9 @@
       border: 1px solid transparent;
     }
     .service-card:hover {
-      border-color: rgba(99,102,241,0.4);
+      border-color: rgba(249,115,22,0.4);
       transform: translateY(-6px);
-      box-shadow: 0 20px 40px rgba(99,102,241,0.2);
+      box-shadow: 0 20px 40px rgba(249,115,22,0.2);
     }
 
     /* Portfolio card */
@@ -239,7 +241,7 @@
       transition: all 0.2s ease;
     }
     .form-input:focus {
-      box-shadow: 0 0 0 3px rgba(99,102,241,0.3);
+      box-shadow: 0 0 0 3px rgba(249,115,22,0.3);
     }
 
     /* Back to top */
@@ -263,7 +265,7 @@
     }
     .testimonial-card:hover {
       transform: translateY(-4px);
-      box-shadow: 0 20px 40px rgba(99,102,241,0.2);
+      box-shadow: 0 20px 40px rgba(249,115,22,0.2);
     }
   </style>
 </head>
@@ -276,26 +278,24 @@
     <div class="flex items-center justify-between h-16">
       <!-- Logo -->
       <a href="#home" class="flex items-center gap-2" aria-label="MNP Web Solution Home">
-        <div class="w-9 h-9 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center flex-shrink-0">
-          <span class="text-white font-poppins font-bold text-sm">MNP</span>
-        </div>
+        <img src="./logo.png" alt="MNP Web Solution Logo" class="w-11 h-11 rounded-full object-cover flex-shrink-0" width="44" height="44" />
         <span class="font-poppins font-bold text-lg text-gray-900 dark:text-white hidden sm:block">MNP Web Solution</span>
       </a>
 
       <!-- Desktop Nav -->
       <div class="hidden md:flex items-center gap-6" role="menubar">
-        <a href="#home" class="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors" role="menuitem">Home</a>
-        <a href="#about" class="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors" role="menuitem">About</a>
-        <a href="#services" class="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors" role="menuitem">Services</a>
-        <a href="#portfolio" class="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors" role="menuitem">Portfolio</a>
-        <a href="#testimonials" class="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors" role="menuitem">Reviews</a>
-        <a href="#contact" class="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors" role="menuitem">Contact</a>
+        <a href="#home" class="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-orange-500 dark:hover:text-orange-400 transition-colors" role="menuitem">Home</a>
+        <a href="#about" class="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-orange-500 dark:hover:text-orange-400 transition-colors" role="menuitem">About</a>
+        <a href="#services" class="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-orange-500 dark:hover:text-orange-400 transition-colors" role="menuitem">Services</a>
+        <a href="#portfolio" class="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-orange-500 dark:hover:text-orange-400 transition-colors" role="menuitem">Portfolio</a>
+        <a href="#testimonials" class="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-orange-500 dark:hover:text-orange-400 transition-colors" role="menuitem">Reviews</a>
+        <a href="#contact" class="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-orange-500 dark:hover:text-orange-400 transition-colors" role="menuitem">Contact</a>
         <!-- Dark Mode Toggle -->
-        <button id="theme-toggle" aria-label="Toggle dark mode" class="w-9 h-9 rounded-lg bg-gray-100 dark:bg-gray-800 flex items-center justify-center hover:bg-indigo-100 dark:hover:bg-indigo-900 transition-colors">
+        <button id="theme-toggle" aria-label="Toggle dark mode" class="w-9 h-9 rounded-lg bg-gray-100 dark:bg-gray-800 flex items-center justify-center hover:bg-orange-100 dark:hover:bg-orange-900/40 transition-colors">
           <svg id="theme-icon-sun" class="w-4 h-4 text-yellow-500 hidden dark:block" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"/></svg>
           <svg id="theme-icon-moon" class="w-4 h-4 text-gray-700 block dark:hidden" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/></svg>
         </button>
-        <a href="#contact" class="bg-gradient-to-r from-indigo-500 to-purple-600 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:opacity-90 transition-opacity">Free Quote</a>
+        <a href="#contact" class="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:opacity-90 transition-opacity">Free Quote</a>
       </div>
 
       <!-- Mobile controls -->
@@ -315,13 +315,13 @@
   <!-- Mobile Menu -->
   <div id="mobile-menu" class="md:hidden bg-white/95 dark:bg-gray-950/95 border-t border-gray-200/50 dark:border-gray-800/50" role="menu">
     <div class="px-4 py-3 space-y-1">
-      <a href="#home" class="mobile-nav-link block px-3 py-2 rounded-lg text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-indigo-900/30 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors" role="menuitem">Home</a>
-      <a href="#about" class="mobile-nav-link block px-3 py-2 rounded-lg text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-indigo-900/30 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors" role="menuitem">About</a>
-      <a href="#services" class="mobile-nav-link block px-3 py-2 rounded-lg text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-indigo-900/30 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors" role="menuitem">Services</a>
-      <a href="#portfolio" class="mobile-nav-link block px-3 py-2 rounded-lg text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-indigo-900/30 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors" role="menuitem">Portfolio</a>
-      <a href="#testimonials" class="mobile-nav-link block px-3 py-2 rounded-lg text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-indigo-900/30 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors" role="menuitem">Reviews</a>
-      <a href="#contact" class="mobile-nav-link block px-3 py-2 rounded-lg text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-indigo-50 dark:hover:bg-indigo-900/30 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors" role="menuitem">Contact</a>
-      <a href="#contact" class="mobile-nav-link block mt-2 bg-gradient-to-r from-indigo-500 to-purple-600 text-white px-3 py-2 rounded-lg text-sm font-semibold text-center">Free Quote</a>
+      <a href="#home" class="mobile-nav-link block px-3 py-2 rounded-lg text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-orange-50 dark:hover:bg-orange-900/20 hover:text-orange-500 dark:hover:text-orange-400 transition-colors" role="menuitem">Home</a>
+      <a href="#about" class="mobile-nav-link block px-3 py-2 rounded-lg text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-orange-50 dark:hover:bg-orange-900/20 hover:text-orange-500 dark:hover:text-orange-400 transition-colors" role="menuitem">About</a>
+      <a href="#services" class="mobile-nav-link block px-3 py-2 rounded-lg text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-orange-50 dark:hover:bg-orange-900/20 hover:text-orange-500 dark:hover:text-orange-400 transition-colors" role="menuitem">Services</a>
+      <a href="#portfolio" class="mobile-nav-link block px-3 py-2 rounded-lg text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-orange-50 dark:hover:bg-orange-900/20 hover:text-orange-500 dark:hover:text-orange-400 transition-colors" role="menuitem">Portfolio</a>
+      <a href="#testimonials" class="mobile-nav-link block px-3 py-2 rounded-lg text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-orange-50 dark:hover:bg-orange-900/20 hover:text-orange-500 dark:hover:text-orange-400 transition-colors" role="menuitem">Reviews</a>
+      <a href="#contact" class="mobile-nav-link block px-3 py-2 rounded-lg text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-orange-50 dark:hover:bg-orange-900/20 hover:text-orange-500 dark:hover:text-orange-400 transition-colors" role="menuitem">Contact</a>
+      <a href="#contact" class="mobile-nav-link block mt-2 bg-gradient-to-r from-orange-500 to-orange-600 text-white px-3 py-2 rounded-lg text-sm font-semibold text-center">Free Quote</a>
     </div>
   </div>
 </nav>
@@ -331,15 +331,20 @@
   <canvas id="particles-canvas" aria-hidden="true"></canvas>
 
   <!-- Glow orbs -->
-  <div class="absolute top-1/4 left-1/4 w-72 h-72 bg-indigo-600/20 rounded-full blur-3xl animate-pulse-slow pointer-events-none" aria-hidden="true"></div>
-  <div class="absolute bottom-1/3 right-1/4 w-96 h-96 bg-purple-600/15 rounded-full blur-3xl animate-pulse-slow pointer-events-none" style="animation-delay:2s" aria-hidden="true"></div>
+  <div class="absolute top-1/4 left-1/4 w-72 h-72 bg-orange-500/20 rounded-full blur-3xl animate-pulse-slow pointer-events-none" aria-hidden="true"></div>
+  <div class="absolute bottom-1/3 right-1/4 w-96 h-96 bg-orange-600/15 rounded-full blur-3xl animate-pulse-slow pointer-events-none" style="animation-delay:2s" aria-hidden="true"></div>
   <div class="absolute top-1/2 right-1/3 w-48 h-48 bg-blue-500/10 rounded-full blur-2xl pointer-events-none" aria-hidden="true"></div>
 
   <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16">
     <div class="flex flex-col items-center text-center">
 
       <!-- Badge -->
-      <div class="glass inline-flex items-center gap-2 px-4 py-2 rounded-full mb-8 animate-float" role="note">
+      <!-- Hero Logo -->
+      <div class="mb-6 animate-float">
+        <img src="./logo.png" alt="MNP Web Solution" class="w-28 h-28 sm:w-36 sm:h-36 rounded-full object-cover mx-auto" width="144" height="144" style="filter: drop-shadow(0 0 24px rgba(249,115,22,0.6));" />
+      </div>
+
+      <div class="glass inline-flex items-center gap-2 px-4 py-2 rounded-full mb-8" role="note">
         <span class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
         <span class="text-sm text-gray-300 font-medium">Est. 2019 · Lucknow, Uttar Pradesh</span>
       </div>
@@ -354,7 +359,7 @@
       <p class="text-lg sm:text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-4 font-light leading-relaxed">
         Lucknow's Top Software Company –
       </p>
-      <p class="text-base sm:text-lg md:text-xl text-indigo-300 max-w-2xl mx-auto mb-10 font-medium">
+      <p class="text-base sm:text-lg md:text-xl text-orange-300 max-w-2xl mx-auto mb-10 font-medium">
         Innovative Web, App &amp; Digital Solutions Since 2019
       </p>
 
@@ -376,7 +381,7 @@
 
       <!-- CTAs -->
       <div class="flex flex-col sm:flex-row items-center gap-4 mb-12">
-        <a href="#contact" class="group bg-gradient-to-r from-indigo-500 to-purple-600 text-white px-8 py-4 rounded-xl font-semibold text-base hover:opacity-90 hover:scale-105 transition-all glow-indigo flex items-center gap-2">
+        <a href="#contact" class="group bg-gradient-to-r from-orange-500 to-orange-600 text-white px-8 py-4 rounded-xl font-semibold text-base hover:opacity-90 hover:scale-105 transition-all glow-orange flex items-center gap-2">
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
           Get Free Quote
         </a>
@@ -388,7 +393,7 @@
 
       <!-- Social icons -->
       <div class="flex items-center gap-4" aria-label="Social media links">
-        <a href="https://www.facebook.com/mnpwebsolutionIndia/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="glass w-10 h-10 rounded-lg flex items-center justify-center text-gray-300 hover:text-indigo-400 hover:border-indigo-400/40 transition-all hover:scale-110">
+        <a href="https://www.facebook.com/mnpwebsolutionIndia/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="glass w-10 h-10 rounded-lg flex items-center justify-center text-gray-300 hover:text-orange-400 hover:border-orange-400/40 transition-all hover:scale-110">
           <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
         </a>
         <a href="https://www.instagram.com/mnpwebsolution/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="glass w-10 h-10 rounded-lg flex items-center justify-center text-gray-300 hover:text-pink-400 transition-all hover:scale-110">
@@ -406,7 +411,7 @@
 
   <!-- Scroll indicator -->
   <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce" aria-hidden="true">
-    <svg class="w-6 h-6 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    <svg class="w-6 h-6 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
   </div>
 </section>
 
@@ -416,7 +421,7 @@
 
     <!-- Section header -->
     <div class="text-center mb-16 reveal">
-      <span class="inline-block bg-indigo-100 dark:bg-indigo-900/40 text-indigo-600 dark:text-indigo-400 text-xs font-semibold px-3 py-1.5 rounded-full mb-4 tracking-wide uppercase">About Us</span>
+      <span class="inline-block bg-orange-100 dark:bg-orange-900/30 text-orange-600 dark:text-orange-400 text-xs font-semibold px-3 py-1.5 rounded-full mb-4 tracking-wide uppercase">About Us</span>
       <h2 class="font-poppins font-bold text-3xl sm:text-4xl lg:text-5xl text-gray-900 dark:text-white mb-4">
         Building Digital Excellence<br class="hidden sm:block" />
         <span class="gradient-text">Since 2019</span>
@@ -443,7 +448,7 @@
 
         <!-- Address badge -->
         <div class="mt-6 glass-light rounded-xl p-4 flex items-start gap-3">
-          <svg class="w-5 h-5 text-indigo-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
           <div>
             <p class="text-sm font-semibold text-gray-900 dark:text-white">Our Office</p>
             <p class="text-sm text-gray-600 dark:text-gray-400">B-12, Sector-E, Near Soft Con, Aliganj,<br />Lucknow - 226024, Uttar Pradesh, India</p>
@@ -454,8 +459,8 @@
       <!-- Right: Cards grid -->
       <div class="grid grid-cols-2 gap-4 reveal reveal-delay-2">
         <div class="glass-light rounded-2xl p-5 hover-glow cursor-default">
-          <div class="w-10 h-10 rounded-xl bg-indigo-100 dark:bg-indigo-900/50 flex items-center justify-center mb-3">
-            <svg class="w-5 h-5 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          <div class="w-10 h-10 rounded-xl bg-orange-100 dark:bg-orange-900/40 flex items-center justify-center mb-3">
+            <svg class="w-5 h-5 text-orange-500 dark:text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
           </div>
           <h3 class="font-poppins font-semibold text-gray-900 dark:text-white text-sm mb-1">Innovation First</h3>
           <p class="text-xs text-gray-500 dark:text-gray-400 leading-relaxed">Cutting-edge tech stack. Future-ready solutions.</p>
@@ -478,8 +483,8 @@
         </div>
 
         <div class="glass-light rounded-2xl p-5 hover-glow cursor-default">
-          <div class="w-10 h-10 rounded-xl bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center mb-3">
-            <svg class="w-5 h-5 text-purple-600 dark:text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          <div class="w-10 h-10 rounded-xl bg-orange-100 dark:bg-orange-900/30 flex items-center justify-center mb-3">
+            <svg class="w-5 h-5 text-orange-500 dark:text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
           </div>
           <h3 class="font-poppins font-semibold text-gray-900 dark:text-white text-sm mb-1">Local Expertise</h3>
           <p class="text-xs text-gray-500 dark:text-gray-400 leading-relaxed">Deep roots in Lucknow. Local market insight.</p>
@@ -489,15 +494,15 @@
 
     <!-- Stats bar -->
     <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 reveal reveal-delay-3">
-      <div class="text-center bg-gradient-to-br from-indigo-50 to-purple-50 dark:from-indigo-900/20 dark:to-purple-900/20 rounded-2xl p-6">
-        <div class="font-poppins font-black text-4xl text-indigo-600 dark:text-indigo-400 mb-1">7+</div>
+      <div class="text-center bg-gradient-to-br from-orange-50 to-amber-50 dark:from-orange-900/20 dark:to-amber-900/20 rounded-2xl p-6">
+        <div class="font-poppins font-black text-4xl text-orange-500 dark:text-orange-400 mb-1">7+</div>
         <div class="text-sm text-gray-500 dark:text-gray-400 font-medium">Years Active</div>
       </div>
-      <div class="text-center bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 rounded-2xl p-6">
-        <div class="font-poppins font-black text-4xl text-purple-600 dark:text-purple-400 mb-1">100+</div>
+      <div class="text-center bg-gradient-to-br from-orange-50 to-amber-50 dark:from-orange-900/20 dark:to-amber-900/20 rounded-2xl p-6">
+        <div class="font-poppins font-black text-4xl text-orange-500 dark:text-orange-400 mb-1">100+</div>
         <div class="text-sm text-gray-500 dark:text-gray-400 font-medium">Projects Done</div>
       </div>
-      <div class="text-center bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 rounded-2xl p-6">
+      <div class="text-center bg-gradient-to-br from-orange-50 to-amber-50 dark:from-orange-900/20 dark:to-amber-900/20 rounded-2xl p-6">
         <div class="font-poppins font-black text-4xl text-blue-600 dark:text-blue-400 mb-1">50+</div>
         <div class="text-sm text-gray-500 dark:text-gray-400 font-medium">Happy Clients</div>
       </div>
@@ -514,7 +519,7 @@
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
     <div class="text-center mb-16 reveal">
-      <span class="inline-block bg-purple-100 dark:bg-purple-900/40 text-purple-600 dark:text-purple-400 text-xs font-semibold px-3 py-1.5 rounded-full mb-4 tracking-wide uppercase">What We Do</span>
+      <span class="inline-block bg-orange-100 dark:bg-orange-900/30 text-orange-500 dark:text-orange-400 text-xs font-semibold px-3 py-1.5 rounded-full mb-4 tracking-wide uppercase">What We Do</span>
       <h2 class="font-poppins font-bold text-3xl sm:text-4xl lg:text-5xl text-gray-900 dark:text-white mb-4">
         Full-Spectrum <span class="gradient-text">Digital Services</span>
       </h2>
@@ -527,17 +532,17 @@
 
       <!-- Web Development -->
       <article class="service-card glass-light rounded-2xl p-6 reveal reveal-delay-1" aria-label="Web Development service">
-        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-indigo-500 to-indigo-600 flex items-center justify-center mb-4">
+        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center mb-4">
           <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
         </div>
         <h3 class="font-poppins font-bold text-gray-900 dark:text-white text-lg mb-3">Web Development</h3>
         <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
           <li class="flex items-start gap-2">
-            <svg class="w-4 h-4 text-indigo-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <svg class="w-4 h-4 text-orange-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
             Custom PHP, WordPress &amp; modern framework development
           </li>
           <li class="flex items-start gap-2">
-            <svg class="w-4 h-4 text-indigo-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <svg class="w-4 h-4 text-orange-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
             Responsive, SEO-ready &amp; lightning-fast websites
           </li>
         </ul>
@@ -545,17 +550,17 @@
 
       <!-- E-Commerce -->
       <article class="service-card glass-light rounded-2xl p-6 reveal reveal-delay-2" aria-label="E-Commerce and App Development service">
-        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center mb-4">
+        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center mb-4">
           <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
         </div>
         <h3 class="font-poppins font-bold text-gray-900 dark:text-white text-lg mb-3">E-Commerce + App Dev</h3>
         <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
           <li class="flex items-start gap-2">
-            <svg class="w-4 h-4 text-purple-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <svg class="w-4 h-4 text-orange-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
             Full-featured online stores with payment gateway integration
           </li>
           <li class="flex items-start gap-2">
-            <svg class="w-4 h-4 text-purple-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <svg class="w-4 h-4 text-orange-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
             Native &amp; cross-platform mobile apps (iOS + Android)
           </li>
         </ul>
@@ -616,15 +621,15 @@
       </article>
 
       <!-- CTA Card -->
-      <article class="rounded-2xl p-6 bg-gradient-to-br from-indigo-500 to-purple-600 flex flex-col justify-between reveal reveal-delay-3" aria-label="Get started">
+      <article class="rounded-2xl p-6 bg-gradient-to-br from-orange-500 to-orange-600 flex flex-col justify-between reveal reveal-delay-3" aria-label="Get started">
         <div>
           <div class="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center mb-4">
             <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/></svg>
           </div>
           <h3 class="font-poppins font-bold text-white text-lg mb-2">Have a Project?</h3>
-          <p class="text-indigo-100 text-sm leading-relaxed">Let's discuss your requirements. Free consultation, no strings attached.</p>
+          <p class="text-orange-100 text-sm leading-relaxed">Let's discuss your requirements. Free consultation, no strings attached.</p>
         </div>
-        <a href="#contact" class="mt-4 inline-flex items-center gap-2 bg-white text-indigo-600 font-semibold text-sm px-4 py-2.5 rounded-lg hover:bg-indigo-50 transition-colors w-fit">
+        <a href="#contact" class="mt-4 inline-flex items-center gap-2 bg-white text-orange-600 font-semibold text-sm px-4 py-2.5 rounded-lg hover:bg-orange-50 transition-colors w-fit">
           Start Project
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
         </a>
@@ -663,16 +668,16 @@
           />
           <div class="absolute inset-0 bg-gradient-to-t from-gray-900/70 to-transparent"></div>
           <div class="absolute bottom-4 left-4">
-            <span class="bg-purple-500 text-white text-xs font-semibold px-2.5 py-1 rounded-full">E-Commerce</span>
+            <span class="bg-orange-500 text-white text-xs font-semibold px-2.5 py-1 rounded-full">E-Commerce</span>
           </div>
         </div>
         <div class="p-5">
           <h3 class="font-poppins font-bold text-gray-900 dark:text-white text-lg mb-2">Retail E-Commerce Platform</h3>
           <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">Full-stack online store with inventory management, payment integration, and mobile-first design. 3x conversion rate improvement.</p>
           <div class="mt-3 flex flex-wrap gap-2">
-            <span class="text-xs bg-indigo-100 dark:bg-indigo-900/40 text-indigo-600 dark:text-indigo-400 px-2.5 py-1 rounded-full">PHP</span>
-            <span class="text-xs bg-indigo-100 dark:bg-indigo-900/40 text-indigo-600 dark:text-indigo-400 px-2.5 py-1 rounded-full">WooCommerce</span>
-            <span class="text-xs bg-indigo-100 dark:bg-indigo-900/40 text-indigo-600 dark:text-indigo-400 px-2.5 py-1 rounded-full">Payment Gateway</span>
+            <span class="text-xs bg-orange-100 dark:bg-orange-900/30 text-orange-600 dark:text-orange-400 px-2.5 py-1 rounded-full">PHP</span>
+            <span class="text-xs bg-orange-100 dark:bg-orange-900/30 text-orange-600 dark:text-orange-400 px-2.5 py-1 rounded-full">WooCommerce</span>
+            <span class="text-xs bg-orange-100 dark:bg-orange-900/30 text-orange-600 dark:text-orange-400 px-2.5 py-1 rounded-full">Payment Gateway</span>
           </div>
         </div>
       </article>
@@ -761,7 +766,7 @@
     </div>
 
     <div class="text-center mt-10 reveal">
-      <a href="#contact" class="inline-flex items-center gap-2 bg-gradient-to-r from-indigo-500 to-purple-600 text-white px-7 py-3.5 rounded-xl font-semibold hover:opacity-90 transition-opacity">
+      <a href="#contact" class="inline-flex items-center gap-2 bg-gradient-to-r from-orange-500 to-orange-600 text-white px-7 py-3.5 rounded-xl font-semibold hover:opacity-90 transition-opacity">
         Start Your Project
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
       </a>
@@ -795,7 +800,7 @@
           "Excellent service! MNP Web Solution built our e-commerce website and the results exceeded expectations. Professional team, on-time delivery, and great post-launch support."
         </p>
         <footer class="flex items-center gap-3">
-          <div class="w-10 h-10 rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center flex-shrink-0">
+          <div class="w-10 h-10 rounded-full bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center flex-shrink-0">
             <span class="text-white font-poppins font-bold text-sm">V</span>
           </div>
           <div>
@@ -812,7 +817,7 @@
           "Best service in Lucknow for web development. Vishal and the team understood our requirements perfectly. Our website traffic increased 4x after the redesign and SEO work!"
         </p>
         <footer class="flex items-center gap-3">
-          <div class="w-10 h-10 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center flex-shrink-0">
+          <div class="w-10 h-10 rounded-full bg-gradient-to-br from-orange-400 to-amber-3000 flex items-center justify-center flex-shrink-0">
             <span class="text-white font-poppins font-bold text-sm">V</span>
           </div>
           <div>
@@ -829,7 +834,7 @@
           "Outstanding digital marketing results! Our social media presence grew dramatically and leads increased by over 200%. MNP Web Solution is the go-to agency in Lucknow."
         </p>
         <footer class="flex items-center gap-3">
-          <div class="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-indigo-500 flex items-center justify-center flex-shrink-0">
+          <div class="w-10 h-10 rounded-full bg-gradient-to-br from-orange-400 to-orange-600 flex items-center justify-center flex-shrink-0">
             <span class="text-white font-poppins font-bold text-sm">R</span>
           </div>
           <div>
@@ -843,7 +848,7 @@
 
     <!-- JustDial CTA -->
     <div class="mt-10 text-center reveal">
-      <a href="https://www.justdial.com/Lucknow/Mnp-Web-Solution-Aliganj/0522PX522-X522-210216130618-N2P2_BZDET" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-indigo-600 dark:text-indigo-400 font-medium text-sm hover:underline">
+      <a href="https://www.justdial.com/Lucknow/Mnp-Web-Solution-Aliganj/0522PX522-X522-210216130618-N2P2_BZDET" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-orange-500 dark:text-orange-400 font-medium text-sm hover:underline">
         View all reviews on JustDial
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
       </a>
@@ -857,7 +862,7 @@
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
     <div class="text-center mb-16 reveal">
-      <span class="inline-block bg-indigo-100 dark:bg-indigo-900/40 text-indigo-600 dark:text-indigo-400 text-xs font-semibold px-3 py-1.5 rounded-full mb-4 tracking-wide uppercase">Get In Touch</span>
+      <span class="inline-block bg-orange-100 dark:bg-orange-900/30 text-orange-600 dark:text-orange-400 text-xs font-semibold px-3 py-1.5 rounded-full mb-4 tracking-wide uppercase">Get In Touch</span>
       <h2 class="font-poppins font-bold text-3xl sm:text-4xl lg:text-5xl text-gray-900 dark:text-white mb-4">
         Let's Build Something <span class="gradient-text">Great Together</span>
       </h2>
@@ -872,8 +877,12 @@
       <div class="reveal reveal-delay-1">
         <div class="glass-light rounded-2xl p-6 sm:p-8">
           <h3 class="font-poppins font-bold text-gray-900 dark:text-white text-xl mb-6">Send Us a Message</h3>
-          <!-- Replace YOUR-ID in the action below with your Formspree form ID after signing up at formspree.io -->
-          <form action="https://formspree.io/f/YOUR-ID" method="POST" id="contact-form" novalidate>
+          <!-- Web3Forms: free, sends direct to your email. Get key at web3forms.com (takes 30 seconds) -->
+          <form action="https://api.web3forms.com/submit" method="POST" id="contact-form" novalidate>
+            <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_KEY" />
+            <input type="hidden" name="subject" value="New Inquiry - MNP Web Solution Website" />
+            <input type="hidden" name="from_name" value="MNP Web Solution Website" />
+            <input type="checkbox" name="botcheck" style="display:none" />
             <div class="grid sm:grid-cols-2 gap-4 mb-4">
               <div>
                 <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1.5">Full Name <span class="text-red-500" aria-hidden="true">*</span></label>
@@ -884,7 +893,7 @@
                   required
                   autocomplete="name"
                   placeholder="Your full name"
-                  class="form-input w-full px-4 py-2.5 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 text-sm focus:outline-none focus:border-indigo-500 dark:focus:border-indigo-500"
+                  class="form-input w-full px-4 py-2.5 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 text-sm focus:outline-none focus:border-orange-500 dark:focus:border-orange-500"
                   aria-required="true"
                 />
               </div>
@@ -897,7 +906,7 @@
                   required
                   autocomplete="email"
                   placeholder="you@example.com"
-                  class="form-input w-full px-4 py-2.5 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 text-sm focus:outline-none focus:border-indigo-500 dark:focus:border-indigo-500"
+                  class="form-input w-full px-4 py-2.5 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 text-sm focus:outline-none focus:border-orange-500 dark:focus:border-orange-500"
                   aria-required="true"
                 />
               </div>
@@ -911,7 +920,7 @@
                   name="phone"
                   autocomplete="tel"
                   placeholder="+91 XXXXX XXXXX"
-                  class="form-input w-full px-4 py-2.5 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 text-sm focus:outline-none focus:border-indigo-500 dark:focus:border-indigo-500"
+                  class="form-input w-full px-4 py-2.5 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 text-sm focus:outline-none focus:border-orange-500 dark:focus:border-orange-500"
                 />
               </div>
               <div>
@@ -919,7 +928,7 @@
                 <select
                   id="service"
                   name="service"
-                  class="form-input w-full px-4 py-2.5 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white text-sm focus:outline-none focus:border-indigo-500 dark:focus:border-indigo-500"
+                  class="form-input w-full px-4 py-2.5 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white text-sm focus:outline-none focus:border-orange-500 dark:focus:border-orange-500"
                 >
                   <option value="">Select a service</option>
                   <option value="web-development">Web Development</option>
@@ -939,14 +948,14 @@
                 required
                 rows="4"
                 placeholder="Tell us about your project, goals, and timeline..."
-                class="form-input w-full px-4 py-2.5 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 text-sm focus:outline-none focus:border-indigo-500 dark:focus:border-indigo-500 resize-none"
+                class="form-input w-full px-4 py-2.5 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 text-sm focus:outline-none focus:border-orange-500 dark:focus:border-orange-500 resize-none"
                 aria-required="true"
               ></textarea>
             </div>
             <button
               type="submit"
               id="submit-btn"
-              class="w-full bg-gradient-to-r from-indigo-500 to-purple-600 text-white py-3.5 rounded-xl font-semibold text-sm hover:opacity-90 transition-opacity flex items-center justify-center gap-2"
+              class="w-full bg-gradient-to-r from-orange-500 to-orange-600 text-white py-3.5 rounded-xl font-semibold text-sm hover:opacity-90 transition-opacity flex items-center justify-center gap-2"
               aria-label="Send message"
             >
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
@@ -963,8 +972,8 @@
         <!-- Info cards -->
         <div class="grid sm:grid-cols-2 gap-4">
           <div class="glass-light rounded-xl p-4 flex items-start gap-3">
-            <div class="w-9 h-9 rounded-lg bg-indigo-100 dark:bg-indigo-900/40 flex items-center justify-center flex-shrink-0">
-              <svg class="w-4 h-4 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            <div class="w-9 h-9 rounded-lg bg-orange-100 dark:bg-orange-900/30 flex items-center justify-center flex-shrink-0">
+              <svg class="w-4 h-4 text-orange-500 dark:text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
             </div>
             <div>
               <p class="text-xs font-semibold text-gray-900 dark:text-white mb-1">Address</p>
@@ -993,12 +1002,12 @@
           </div>
 
           <div class="glass-light rounded-xl p-4 flex items-start gap-3">
-            <div class="w-9 h-9 rounded-lg bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center flex-shrink-0">
-              <svg class="w-4 h-4 text-purple-600 dark:text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            <div class="w-9 h-9 rounded-lg bg-orange-100 dark:bg-orange-900/30 flex items-center justify-center flex-shrink-0">
+              <svg class="w-4 h-4 text-orange-500 dark:text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
             </div>
             <div>
               <p class="text-xs font-semibold text-gray-900 dark:text-white mb-1">Email</p>
-              <a href="mailto:info@mnpwebsolution.com" class="text-xs text-purple-600 dark:text-purple-400 hover:underline">info@mnpwebsolution.com</a>
+              <a href="mailto:info@mnpwebsolution.com" class="text-xs text-orange-500 dark:text-orange-400 hover:underline">info@mnpwebsolution.com</a>
             </div>
           </div>
         </div>
@@ -1043,9 +1052,7 @@
     <div class="flex flex-col md:flex-row items-center justify-between gap-4">
 
       <div class="flex items-center gap-3">
-        <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center">
-          <span class="text-white font-poppins font-bold text-xs">MNP</span>
-        </div>
+        <img src="./logo.png" alt="MNP Web Solution Logo" class="w-12 h-12 rounded-full object-cover flex-shrink-0" width="48" height="48" />
         <div>
           <p class="text-white font-poppins font-semibold text-sm">MNP Web Solution</p>
           <p class="text-xs text-gray-500">Lucknow, Uttar Pradesh, India</p>
@@ -1058,11 +1065,11 @@
       </div>
 
       <nav class="flex items-center gap-4" aria-label="Footer navigation">
-        <a href="#" class="text-xs text-gray-500 hover:text-indigo-400 transition-colors">Privacy Policy</a>
+        <a href="#" class="text-xs text-gray-500 hover:text-orange-400 transition-colors">Privacy Policy</a>
         <span class="text-gray-700 text-xs" aria-hidden="true">|</span>
-        <a href="#" class="text-xs text-gray-500 hover:text-indigo-400 transition-colors">Terms of Service</a>
+        <a href="#" class="text-xs text-gray-500 hover:text-orange-400 transition-colors">Terms of Service</a>
         <span class="text-gray-700 text-xs" aria-hidden="true">|</span>
-        <a href="#" class="text-xs text-gray-500 hover:text-indigo-400 transition-colors">Sitemap</a>
+        <a href="#" class="text-xs text-gray-500 hover:text-orange-400 transition-colors">Sitemap</a>
       </nav>
 
     </div>
@@ -1073,7 +1080,7 @@
 <button
   id="back-to-top"
   aria-label="Back to top"
-  class="fixed bottom-6 right-6 z-50 w-11 h-11 bg-gradient-to-br from-indigo-500 to-purple-600 text-white rounded-xl flex items-center justify-center shadow-lg opacity-0 pointer-events-none hover:opacity-90 hover:scale-110 transition-all"
+  class="fixed bottom-6 right-6 z-50 w-11 h-11 bg-gradient-to-br from-orange-500 to-orange-600 text-white rounded-xl flex items-center justify-center shadow-lg opacity-0 pointer-events-none hover:opacity-90 hover:scale-110 transition-all"
 >
   <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"/></svg>
 </button>
@@ -1168,7 +1175,7 @@
     });
   });
 
-  // Contact form (Formspree AJAX)
+  // Contact form — Web3Forms (free, sends email directly to you)
   const form = document.getElementById('contact-form');
   const status = document.getElementById('form-status');
   const submitBtn = document.getElementById('submit-btn');
@@ -1181,13 +1188,13 @@
 
       const data = new FormData(form);
       try {
-        const res = await fetch(form.action, {
+        const res = await fetch('https://api.web3forms.com/submit', {
           method: 'POST',
-          body: data,
-          headers: { 'Accept': 'application/json' }
+          body: data
         });
+        const json = await res.json();
 
-        if (res.ok) {
+        if (json.success) {
           status.textContent = '✓ Message sent! We\'ll get back to you within 24 hours.';
           status.className = 'mt-3 text-sm text-center text-green-600 dark:text-green-400';
           status.classList.remove('hidden');
@@ -1195,10 +1202,10 @@
           if (typeof gtag !== 'undefined') gtag('event', 'contact_form_submit', { event_category: 'engagement' });
           if (typeof fbq !== 'undefined') fbq('track', 'Lead');
         } else {
-          throw new Error('Form submission failed');
+          throw new Error(json.message || 'Submission failed');
         }
-      } catch {
-        status.textContent = '✗ Something went wrong. Please try WhatsApp or email instead.';
+      } catch (err) {
+        status.textContent = '✗ ' + (err.message === 'Submission failed' ? 'Something went wrong. Try WhatsApp or email.' : 'Network error. Please try again.');
         status.className = 'mt-3 text-sm text-center text-red-500 dark:text-red-400';
         status.classList.remove('hidden');
       }
@@ -1239,7 +1246,7 @@
       draw() {
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(129, 140, 248, ${this.alpha})`;
+        ctx.fillStyle = `rgba(249, 115, 22, ${this.alpha})`;
         ctx.fill();
       }
     }
@@ -1259,7 +1266,7 @@
           const dist = Math.sqrt(dx * dx + dy * dy);
           if (dist < 120) {
             ctx.beginPath();
-            ctx.strokeStyle = `rgba(99, 102, 241, ${0.12 * (1 - dist / 120)})`;
+            ctx.strokeStyle = `rgba(249, 115, 22, ${0.15 * (1 - dist / 120)})`;
             ctx.lineWidth = 0.5;
             ctx.moveTo(particles[i].x, particles[i].y);
             ctx.lineTo(particles[j].x, particles[j].y);
